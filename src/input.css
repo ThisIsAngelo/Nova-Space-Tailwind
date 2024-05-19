@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+body {
+  font-family: "Michroma", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-line {
+  @apply w-[30px] h-[2px] my-1 block bg-white;
+}
+
+.menu-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.menu-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.menu-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.nav-active {
+  right: 0;
+}

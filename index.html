@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- Michroma & Orbitron Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Web Icon -->
+    <link rel="icon" href="public/assets/img/logos.png" />
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Title -->
+    <title>Nova Space</title>
+  </head>
+  <body>
+    <header
+      class="fixed top-0 left-0 right-0 flex justify-between items-center px-5 py-[10px] bg-black bg-opacity-75 z-[9999]"
+    >
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="public/assets/img/logos.png" width="65" />
+        <a href="#" class="text-[17px] lg:text-[13px]">NovaSpace</a>
+      </div>
+
+      <!-- Nav Laptop/Desktop -->
+      <nav class="hidden lg:flex items-center gap-4 *:text-[13px]">
+        <a
+          href="#hero"
+          class="inline-block after:content-[''] after:border-b-2 after:border-white after:block after:pb-[3px] after:scale-x-0 hover:after:scale-x-75 after:transition after:ease-in-out after:duration-150 hover:after:transition hover:after:ease-in-out hover:after:duration-150"
+          >Home</a
+        >
+        <a
+          href="#planet"
+          class="inline-block after:content-[''] after:border-b-2 after:border-white after:block after:pb-[3px] after:scale-x-0 hover:after:scale-x-75 after:transition after:ease-in-out after:duration-150 hover:after:transition hover:after:ease-in-out hover:after:duration-150"
+          >Planet</a
+        >
+        <a
+          href="#about"
+          class="inline-block after:content-[''] after:border-b-2 after:border-white after:block after:pb-[3px] after:scale-x-0 hover:after:scale-x-75 after:transition after:ease-in-out after:duration-150 hover:after:transition hover:after:ease-in-out hover:after:duration-150"
+          >About</a
+        >
+        <a
+          href="#contact"
+          class="inline-block after:content-[''] after:border-b-2 after:border-white after:block after:pb-[3px] after:scale-x-0 hover:after:scale-x-75 after:transition after:ease-in-out after:duration-150 hover:after:transition hover:after:ease-in-out hover:after:duration-150"
+          >Contact</a
+        >
+      </nav>
+
+      <!-- Nav Mobile & Tablet -->
+      <nav
+        id="navBar"
+        class="top-full translate-x-full absolute flex flex-col items-center transition-transform duration-300 ease-linear gap-6 w-screen *:text-[20px] bg-black bg-opacity-75 min-h-screen pt-16 lg:hidden sm:*:text-[25px]"
+      >
+        <a href="#hero">Home</a>
+        <a href="#planet">Planet</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Extra Nav -->
+      <div class="hidden lg:flex items-center gap-4 *:text-[13px]">
+        <a href="#">Log In</a>
+        <a
+          href="#"
+          class="relative group inline-block p-[10px] border-[3px] border-white text-center rounded-md overflow-hidden"
+        >
+          <span
+            class="relative z-10 transition-all ease-in-out duration-500 group-hover:text-black"
+            >Sign Up</span
+          >
+          <span
+            class="absolute inset-0 w-full h-full bg-white transition-all ease-in-out duration-500 transform group-hover:translate-y-0 translate-y-full"
+          ></span>
+        </a>
+      </div>
+
+      <!-- Menu -->
+      <button
+        id="menu"
+        class="flex flex-col justify-center items-center lg:hidden"
+      >
+        <span
+          class="menu-line transition duration-300 ease-in-out origin-top-left"
+        ></span>
+        <span class="menu-line transition duration-300 ease-in-out"></span>
+        <span
+          class="menu-line transition duration-300 ease-in-out origin-bottom-left"
+        ></span>
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="min-h-screen flex flex-col relative justify-center after:content-[''] after:block after:absolute after:w-full after:h-full after:bottom-0 after:bg-gradient-to-b after:from-transparent after:from-70% after:to-black after:-z-[1]"
+    >
+      <div class="container">
+        <div class="flex justify-center items-center">
+          <!-- Video Background -->
+          <video
+            autoplay
+            src="public/assets/video/earth.mp4"
+            loop
+            muted
+            class="h-full w-full absolute object-cover -z-[1] brightness-[60%]"
+          ></video>
+
+          <div
+            class="flex flex-col justify-center items-center text-center gap-3"
+          >
+            <h2
+              class="text-[20px] font-bold font-orbitron sm:text-[23px] md:text-[26px] xl:text-[48px]"
+            >
+              Getting you closer to space
+            </h2>
+            <div class="flex flex-col items-center gap-4">
+              <!-- Description -->
+              <p class="text-[12px] sm:w-3/4 md:text-[14px] xl:text-[17px]">
+                Embark on cosmic journey, discover mysteries, explore wonders,
+                thrilling adventure!
+              </p>
+              <!-- Button Area -->
+              <div
+                class="flex flex-col justify-center gap-3 w-full sm:flex-row"
+              >
+                <a
+                  href="#"
+                  class="group p-[10px] border-[3px] rounded-[20px] border-white text-[12px] bg-white font-orbitron transition ease-in-out duration-700 hover:bg-transparent sm:w-[30%] xl:w-[25%]"
+                  ><span class="text-black group-hover:text-white"
+                    >Get Start</span
+                  ></a
+                >
+                <a
+                  href="#"
+                  class="p-[10px] border-[3px] rounded-[20px] border-white text-[12px] font-orbitron sm:w-[30%] xl:w-[25%]"
+                  >See More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planet Section -->
+    <section id="planet" class="min-h-screen">
+      <div class="container">
+        <!-- Title -->
+        <div class="flex flex-col items-center gap-4 my-16">
+          <h1
+            class="font-orbitron text-[32px] font-bold after:content-[''] after:block after:border-b-2 after:border-white after:w-1/2 after:mx-auto"
+          >
+            PLANET
+          </h1>
+          <p class="text-center text-[11px] lg:w-1/2">
+            Planet or planetesimal is a celestial body orbiting a star or
+            stellar remnant, possessing its own gravity, not undergoing
+            thermonuclear fusion, and clearing its orbital zone of
+            planetesimals.
+          </p>
+        </div>
+
+        <div class="flex flex-col w-full gap-8 lg:flex-row">
+          <!-- Planet Video -->
+          <div class="flex">
+            <video
+              src="public/assets/video/earth-rotation.mp4"
+              autoplay
+              loop
+              muted
+              class="lg:w-[600px]"
+            ></video>
+          </div>
+          <!-- Planet Description -->
+          <div class="flex flex-col px-3 gap-4 lg:w-1/2">
+            <h1 class="text-[32px]">Earth</h1>
+            <p class="text-[13px]">
+              Earth ranks as the third nearest planet to the Sun and stands as
+              both the densest and fifth largest among the eight planets in the
+              Solar System. As part of the four terrestrial planets, Earth
+              boasts a diameter of approximately 12,742 kilometers and maintains
+              an average temperature hovering around 15 degrees Celsius.
+              Recognized as the "Blue Planet", it earns this moniker due to its
+              unique appearance when observed from the depths of space.
+            </p>
+            <ul class="*:list-square *:text-[13px] flex flex-col gap-2">
+              <li>Name: Earth</li>
+              <li>Position in the Solar System: Third from the Sun</li>
+              <li>Size: Diameter is approximately 12,742 kilometers.</li>
+              <li>Average Temperature: Approximately 15 degrees Celsius</li>
+              <li>
+                Rotation Speed: Earth rotates on its axis at a speed of about
+                1,670 kilometers per hour
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="relative group inline-block p-[10px] border-[3px] border-white w-1/2 text-center rounded-[5px] overflow-hidden"
+            >
+              <span
+                class="relative z-10 transition-all ease-in-out duration-500 group-hover:text-black"
+                >See More Planet!</span
+              >
+              <span
+                class="absolute inset-0 w-full h-full bg-white transition-all ease-in-out duration-500 transform group-hover:translate-y-0 translate-y-full"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="min-h-screen">
+      <div class="w-full px-4 lg:px-0">
+        <!-- Title -->
+        <div class="flex flex-col items-center gap-4 my-16">
+          <h1
+            class="font-orbitron text-[32px] font-bold after:content-[''] after:block after:border-b-2 after:border-white after:w-1/2 after:mx-auto"
+          >
+            ABOUT US
+          </h1>
+          <p class="text-center text-[11px] lg:w-1/2">
+            NovaSpace invites you to explore the mysteries of distant galaxies
+            and celestial wonders, pushing the boundaries of space exploration.
+          </p>
+        </div>
+
+        <!-- About Box Area -->
+        <div
+          class="flex flex-row flex-wrap px-4 *:w-full *:md:border-b-0 *:md:w-1/2 *:lg:w-1/4 lg:px-0"
+        >
+          <!-- Box 1 -->
+          <div
+            class="group flex flex-col items-center h-[24rem] p-5 border-b-2 border-white transition ease-in-out duration-500 hover:bg-white md:border-r-2"
+          >
+            <!-- Title -->
+            <h1
+              class="h-1/4 text-center group-hover:text-black lg:text-[14px] xl:text-[18px]"
+            >
+              Traveling Progammer
+            </h1>
+            <!-- Description -->
+            <p
+              class="h-1/2 text-justify text-[12px] text-black sm:w-3/4 lg:w-full lg:text-[10px] xl:text-[12px]"
+            >
+              Programmers travel through space, bringing their programming
+              expertise to address exploration challenges, from spacecraft
+              systems to habitat software.
+            </p>
+            <!-- Button -->
+            <div class="h-1/4">
+              <a
+                href="#"
+                class="relative group/item inline-block p-[10px] border-[3px] border-black text-center rounded-md overflow-hidden"
+              >
+                <span
+                  class="relative z-10 transition-all ease-in-out duration-500 text-black group-hover/item:text-white"
+                  >Learn More</span
+                >
+                <span
+                  class="absolute inset-0 w-full h-full bg-black transition-all ease-in-out duration-500 transform group-hover/item:translate-y-0 translate-y-full"
+                ></span>
+              </a>
+            </div>
+          </div>
+          <!-- Box 2 -->
+          <div
+            class="group flex flex-col items-center h-[24rem] p-5 border-b-2 border-white transition ease-in-out duration-500 hover:bg-white lg:border-r-2"
+          >
+            <!-- Title -->
+            <h1
+              class="h-1/4 text-center group-hover:text-black lg:text-[14px] xl:text-[18px]"
+            >
+              Modern technologies we use
+            </h1>
+            <!-- Description -->
+            <p
+              class="h-1/2 text-justify text-[12px] text-black sm:w-3/4 lg:w-full lg:text-[10px] xl:text-[12px]"
+            >
+              Modern technologies, such as artificial intelligence and quantum
+              computing, redefine the boundaries of space exploration,
+              integrating seamlessly with the cosmos.
+            </p>
+            <!-- Button -->
+            <div class="h-1/4">
+              <a
+                href="#"
+                class="relative group/item inline-block p-[10px] border-[3px] border-black text-center rounded-md overflow-hidden"
+              >
+                <span
+                  class="relative z-10 transition-all ease-in-out duration-500 text-black group-hover/item:text-white"
+                  >Learn More</span
+                >
+                <span
+                  class="absolute inset-0 w-full h-full bg-black transition-all ease-in-out duration-500 transform group-hover/item:translate-y-0 translate-y-full"
+                ></span>
+              </a>
+            </div>
+          </div>
+          <!-- Box 3 -->
+          <div
+            class="group flex flex-col items-center h-[24rem] p-5 border-b-2 border-white transition ease-in-out duration-500 hover:bg-white md:mt-6 lg:mt-0 md:border-r-2"
+          >
+            <!-- Title -->
+            <h1
+              class="h-1/4 text-center group-hover:text-black lg:text-[14px] xl:text-[18px]"
+            >
+              Safety guarantee
+            </h1>
+            <!-- Description -->
+            <p
+              class="h-1/2 text-justify text-[12px] text-black sm:w-3/4 lg:w-full lg:text-[10px] xl:text-[12px]"
+            >
+              Safety assurance in space missions involves advanced sensors,
+              predictive analytics, and backup systems designed by expert
+              engineers, ranging from radiation protection to sophisticated life
+              support systems.
+            </p>
+            <!-- Button -->
+            <div class="h-1/4">
+              <a
+                href="#"
+                class="relative group/item inline-block p-[10px] border-[3px] border-black text-center rounded-md overflow-hidden"
+              >
+                <span
+                  class="relative z-10 transition-all ease-in-out duration-500 text-black group-hover/item:text-white"
+                  >Learn More</span
+                >
+                <span
+                  class="absolute inset-0 w-full h-full bg-black transition-all ease-in-out duration-500 transform group-hover/item:translate-y-0 translate-y-full"
+                ></span>
+              </a>
+            </div>
+          </div>
+          <!-- Box 4 -->
+          <div
+            class="group flex flex-col items-center h-[24rem] p-5 border-white transition ease-in-out duration-500 hover:bg-white md:mt-6 lg:mt-0"
+          >
+            <!-- Title -->
+            <h1
+              class="h-1/4 text-center group-hover:text-black lg:text-[14px] xl:text-[18px]"
+            >
+              Space Learning
+            </h1>
+            <!-- Description -->
+            <p
+              class="h-1/2 text-justify text-[12px] text-black sm:w-3/4 lg:w-full lg:text-[10px] xl:text-[12px]"
+            >
+              Space learning goes beyond traditional education, with a
+              futuristic curriculum involving virtual reality simulations to
+              explore distant planets and augmented reality interfaces for
+              immersive teaching in a gravity-free environment.
+            </p>
+            <!-- Button -->
+            <div class="h-1/4">
+              <a
+                href="#"
+                class="relative group/item inline-block p-[10px] border-[3px] border-black text-center rounded-md overflow-hidden"
+              >
+                <span
+                  class="relative z-10 transition-all ease-in-out duration-500 text-black group-hover/item:text-white"
+                  >Learn More</span
+                >
+                <span
+                  class="absolute inset-0 w-full h-full bg-black transition-all ease-in-out duration-500 transform group-hover/item:translate-y-0 translate-y-full"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen">
+      <div class="container">
+        <!-- Title -->
+        <div class="flex flex-col items-center gap-4 my-16">
+          <h1
+            class="font-orbitron text-[32px] font-bold after:content-[''] after:block after:border-b-2 after:border-white after:w-1/2 after:mx-auto"
+          >
+            CONTACT
+          </h1>
+          <p class="text-center text-[11px] lg:w-1/2">
+            Do you have suggestions, questions, or just want to say hello to us?
+            We greatly appreciate every message we receive from you.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-8 px-4 lg:flex-row">
+          <!-- Logo Image -->
+          <div class="flex w-full border-b-2 lg:border-b-0 lg:border-r-2">
+            <img src="public/assets/img/logos.png" class="xl:w-[500px] "/>
+          </div>
+
+          <!-- Form -->
+          <form class="flex flex-col w-full gap-4">
+            <div class="flex flex-col gap-4 w-full md:flex-row md:justify-between">
+              <!-- Name Input -->
+              <label for="name">
+                Name
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name..."
+                  class="bg-transparent border-2 border-white p-2 w-full mt-2 rounded-[4px] text-[14px] placeholder:text-white placeholder:opacity-60"
+                />
+              </label>
+              <!-- Email Input -->
+              <label for="email">
+                Email
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email..."
+                  class="bg-transparent border-2 border-white p-2 w-full mt-2 rounded-[4px] text-[14px] placeholder:text-white placeholder:opacity-60"
+                />
+              </label>
+            </div>
+            <!-- Message Input -->
+            <label for="message">
+              Message
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your message here..."
+                class="resize-none bg-transparent rounded-[4px] text-[14px] border-2 border-white p-2 w-full mt-2 min-h-[200px] placeholder:text-white placeholder:opacity-60"
+              ></textarea>
+            </label>
+
+            <!-- Submit Message Button -->
+            <button
+              type="submit"
+              name="submit"
+              id="submit"
+              href="#"
+              class="relative group inline-block p-[10px] border-[3px] border-white text-center rounded-md overflow-hidden"
+            >
+              <span
+                class="relative z-10 transition-all ease-in-out duration-500 group-hover:text-black"
+                >SEND MESSAGE</span
+              >
+              <span
+                class="absolute inset-0 w-full h-full bg-white transition-all ease-in-out duration-500 transform group-hover:translate-y-0 translate-y-full"
+              ></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="min-h-[10vh] mt-16 flex flex-col gap-3">
+      <div class="flex justify-center gap-3">
+        <a href="#footer" class="transition ease-in-out duration-300 hover:text-gray-600"><i data-feather="instagram"></i></a>
+        <a href="#footer" class="transition ease-in-out duration-300 hover:text-gray-600"><i data-feather="facebook"></i></a>
+        <a href="#footer" class="transition ease-in-out duration-300 hover:text-gray-600"><i data-feather="youtube"></i></a>
+        <a href="#footer" class="transition ease-in-out duration-300 hover:text-gray-600"><i data-feather="twitter"></i></a>
+      </div>
+
+      <div class="flex justify-center">
+        <p>Angelo &copy; 2023</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="public/js/script.js"></script>
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
